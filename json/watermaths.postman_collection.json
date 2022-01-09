@@ -1,0 +1,1128 @@
+{
+	"info": {
+		"_postman_id": "3db83321-13ff-452c-bb6e-f5b27d0951be",
+		"name": "watermaths",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "owner",
+			"item": [
+				{
+					"name": "registration",
+					"item": [
+						{
+							"name": "add Owner",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"company_name\":\"watermaths\",\r\n    \"full_name\":\"saif ali shaikh\",\r\n    \"email\":\"saifalishaikh.email@gmail.com\",\r\n    \"mobile\":\"9421601261\",\r\n    \"password\":\"Watermaths@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addOwner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addOwner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get owner",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:4000/api/getOwner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getOwner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update owner",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61be39e09c044f1351cd29a8\",\r\n    \"company_name\":\"watermaths02\"\r\n}s",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/updateOwner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"updateOwner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete owner",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61c6c2a8e526233248fa1e4e\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/deleteOwner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"deleteOwner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "owner login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"saifalishaikh.email@gmail.com\",\r\n    \"password\":\"watermaths@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/ownerLogin",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"ownerLogin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Jar record",
+					"item": [
+						{
+							"name": "add jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"owner\":\"61c7173abd1481cae8e2f039\",\r\n    \"ltr18\":\"5\",  \r\n    \"ltr20\":\"5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addOwnerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addOwnerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get owner current jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61c7173abd1481cae8e2f039\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getOwnerCurrentJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getOwnerCurrentJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get owner jar",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61be39e09c044f1351cd29a8\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getOwnerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getOwnerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"owner\":\"61c7173abd1481cae8e2f039\",\r\n    \"ltr20\":\"10\",  \r\n    \"ltr18\":\"10\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/deleteOwnerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"deleteOwnerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add Day Jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"owner\":\"61be39e09c044f1351cd29a8\",\r\n    \"ltr20\":\"17\",\r\n    \"ltr18\":\"12\",\r\n    \"missing\":\"0\",\r\n    \"extra\":\"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addDayJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addDayJar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "forgot",
+					"item": [
+						{
+							"name": "send otp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"saifalishaikh.email@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/sendOtp",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"sendOtp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verify Otp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"otp\":\"0704\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/verifyOtp",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"verifyOtp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "owner New Password",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\":\"watermaths@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/ownerNewPassword",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"ownerNewPassword"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "partner",
+			"item": [
+				{
+					"name": "registration",
+					"item": [
+						{
+							"name": "get partner",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:4000/api/getPartner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getPartner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add partner",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"full_name\":\"gouse shaikh\",\r\n    \"owner\":\"61c7173abd1481cae8e2f039\",\r\n    \"mobile\":\"9812791224\",\r\n    \"address\":\"Jod baswanna\",\r\n    \"city\":\"Solapur\",\r\n    \"pin_code\":\"411012\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addPartner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addPartner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete partner",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bceb175d8588064c46666c\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/deletePartner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"deletePartner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update partner",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bceb175d8588064c46666c\",\r\n    \"owner\":\"61bc88cfaa7f50cc8b5ee4b2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/updatePartner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"updatePartner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "partner Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"omshi_2641\",    \r\n    \"password\":\"Omshi@123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/partnerLogin",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"partnerLogin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Owner Partner",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61be39e09c044f1351cd29a8\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getAdminPartner",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getAdminPartner"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Jar record",
+					"item": [
+						{
+							"name": "add partner jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partner\":\"61cee816a341c5e03bbcb271\",\r\n    \"ltr18\":\"20\",\r\n    \"ltr20\":\"20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addPartnerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addPartnerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get partner current jar",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61c97efea892041a5ab81a03\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getPartnerCurrentJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getPartnerCurrentJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Partner Jar",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bf94a50b010b36125f3826\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getPartnerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getPartnerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Partner Jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"partner\":\"61cee816a341c5e03bbcb271\",\r\n    \"ltr18\":\"19\",\r\n    \"ltr20\":\"19\",\r\n    \"missing\":\"2\",\r\n    \"extra\":\"0\"    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/deletePartnerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"deletePartnerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "opening partner jar",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61c97efea892041a5ab81a03\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/openingJars",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"openingJars"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "registration",
+					"item": [
+						{
+							"name": "add customer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"full_name\":\"customer06\",\r\n    \"mobile\":\"9821505506\",\r\n    \"address\":\"khan sab nagar\",\r\n    \"city\":\"Solapur\",\r\n    \"pin_code\":\"411016\",\r\n    \"partner\":\"61cee816a341c5e03bbcb271\",\r\n    \"owner\":\"61c7173abd1481cae8e2f039\",\r\n    \"ltr20\":\"30\",\r\n    \"ltr18\":\"25\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addCustomer",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addCustomer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get customer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:4000/api/getCustomer",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getCustomer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Owner Customer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bc88b7aa7f50cc8b5ee4ac\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getOwnerCustomer",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getOwnerCustomer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Partner Customer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bceb175d8588064c46666c\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getPartnerCustomer",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getPartnerCustomer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update customer",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bced5f5d8588064c46667c\",\r\n    \"owner\":\"61bc88cfaa7f50cc8b5ee4b2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/updateCustomer",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"updateCustomer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete customer",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bcceacbc2b1330a07c6e2c\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/deleteCustomer",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"deleteCustomer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Jar Record",
+					"item": [
+						{
+							"name": "add jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"customer\":\"61d016bf1af44f6964017da4\",\r\n    \"filled_18\":\"01\",\r\n    \"empty_18\":\"00\",\r\n    \"stock_18\":\"00\",\r\n    \"filled_20\":\"00\",\r\n    \"empty_20\":\"00\",\r\n    \"stock_20\":\"00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addCustomerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addCustomerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get jar list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61d016bf1af44f6964017da4\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getCustomerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getCustomerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update Customer Jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61d016bf1af44f6964017da4\",\r\n    \"filled_18\":\"05\",\r\n    \"empty_18\":\"00\",\r\n    \"stock_18\":\"00\",\r\n    \"filled_20\":\"00\",\r\n    \"empty_20\":\"00\",\r\n    \"stock_20\":\"00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/updateCustomerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"updateCustomerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "blank Customer Jar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61bced1e5d8588064c466676\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/blankCustomerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"blankCustomerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Customer Jar",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61d016bf1af44f6964017da4\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getCustomerJar",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getCustomerJar"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Total Amount",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61d016bf1af44f6964017da4\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getTotalAmount",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getTotalAmount"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "jar amount",
+					"item": [
+						{
+							"name": "add Amount",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61d016bf1af44f6964017da4\",\r\n    \"amount\":\"30\",\r\n    \"amountType\":\"upi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/addAmount",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"addAmount"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Paid Amount",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":\"61d016bf1af44f6964017da4\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:4000/api/getPaidAmount",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"getPaidAmount"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
